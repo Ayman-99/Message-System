@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ayman.MessagesSystem.View.HomeScreen.forAdmins.controlPanel.ControlPanelController">
+   <children>
+      <AnchorPane layoutX="47.0" prefHeight="27.0" prefWidth="1335.0" style="-fx-background-color: #04afff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar prefHeight="36.0" prefWidth="1335.0" style="-fx-background-color: transparent;">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#closeProgram" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#loadYellow" text="Yellow" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadRed" text="Red" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadGreen" text="Green" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadBlue" text="Blue" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="imagePane1" layoutX="7.0" layoutY="33.0" prefHeight="645.0" prefWidth="1335.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0" />
+      <AnchorPane fx:id="imagePane2" layoutX="10.0" layoutY="33.0" prefHeight="645.0" prefWidth="1335.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0" />
+      <GridPane hgap="10.0" layoutX="109.0" layoutY="128.0" opacity="0.76" prefHeight="460.0" prefWidth="819.0" vgap="10.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="256.0" AnchorPane.topAnchor="128.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton id="homeBTNS" fx:id="b1" onAction="#loadUsers" prefHeight="298.0" prefWidth="267.0" style="-fx-background-color: #04afff;" text="Users Table" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="homeBTNS" fx:id="b2" layoutX="10.0" layoutY="10.0" onAction="#loadMessages" prefHeight="297.0" prefWidth="266.0" style="-fx-background-color: #04afff;" text="Messages Table" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="homeBTNS" fx:id="b3" layoutX="282.0" layoutY="10.0" onAction="#loadChat" prefHeight="296.0" prefWidth="266.0" style="-fx-background-color: #04afff;" text="Enter chat room" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
