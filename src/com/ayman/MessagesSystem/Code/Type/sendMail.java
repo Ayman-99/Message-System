@@ -18,8 +18,8 @@ import org.controlsfx.control.Notifications;
 
 public class sendMail {
 
-    private final static String username = "work000test@gmail.com"; // enter your mail id
-    private final static String password = "32145688+++";// enter ur password
+    private final static String username = ""; // enter your mail id
+    private final static String password = "";// enter ur password
 
     static Properties props = new Properties();
 
